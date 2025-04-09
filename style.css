@@ -1,224 +1,250 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 @font-face {
-    font-family: 'Netflix Sans';
-    font-weight: 100; /* Adjust as needed */
-    font-display: optional;
-    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2) format('woff2'),
-         url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff) format('woff');
+  font-family: "Netflix Sans";
+  font-weight: 100; /* Adjust as needed */
+  font-display: optional;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2)
+      format("woff2"),
+    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff)
+      format("woff");
 }
 
-html{
-    font-size: 16px;  
-    font-family: 'Netflix Sans', sans-serif;
-    font-weight: 100, 200,300,700;
+html {
+  font-size: 16px;
+  font-family: "Netflix Sans", sans-serif;
+  /* font-weight: 100, 200,300,700; */
 }
 
-.main-background-image{
-    background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/2bcf01ee-7ef6-4930-b0d5-c6863853c461/web/IN-en-20241125-TRIFECTA-perspective_a47db038-756f-4f26-b1f7-cfc882b98746_large.jpg);
-   width: 100%;
-   height: 100vh;
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: top;
-   /* filter: brightness(50%); */
+/* BACKGROUND IMAGE CSS */
 
+.main-background-image {
+  background-image: url(/assets/main-page-bg-image.jpg);
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  /* filter: brightness(50%); */
 }
 
-.header{
-    width: 100%;
-    height: 5.6rem;
+/* HEADER */
+
+.header {
+  width: 100%;
+  height: 5.6rem;
 }
 
-.header-netflix-logo-container{
-    display: flex;
-    align-items: center;
-    width: 80%;
-    height: 5.6rem;
-    margin: 0 auto;
+.header-netflix-logo-container {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  height: 5.6rem;
+  margin: 0 auto;
 }
 
-.header-netflix-logo{
-    width: 9.25rem;
-    height: 2.5rem;
-    color: rgb(229, 9, 20);
-    fill: currentColor;
+.header-netflix-logo {
+  width: 9.25rem;
+  height: 2.5rem;
+  color: rgb(229, 9, 20);
+  fill: currentColor;
 }
 
-.form-container{
-    width: 30%;
-    min-width: 400px;
-    height: 87.8vh;
-    background-color: rgba(0,0,0,0.8);
-    padding: 3rem 4.25rem;
-    color: #ffffff;
-    margin: 0 auto;
+/* FORM */
+
+.form-container {
+  width: 450px;
+  /* min-width: 400px; */
+  height: 87.8vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 3rem 4rem;
+  color: #ffffff;
+  margin: 0 auto;
 }
 
-h1{
-    font-size: 2rem;
-    margin: 0 0 1.75rem;
-    color: rgb(255, 255, 255);
-    text-align: left;
-    font-weight: 700;
+h1 {
+  font-size: 2rem;
+  margin: 0 0 1.75rem;
+  color: rgb(255, 255, 255);
+  /* text-align: left; */
+  /* font-weight: 700; */
 }
 
-.login-details-input{
-    display: block;
-    width: 100%;
-    line-height: 1.4;
-    padding: 1.1rem 1rem 1.1rem;
-    background-color: transparent;
-    border: 1px solid rgba(255, 255, 255, 1) ;
-    border-radius: 4px;
-    margin: 1rem 0;
+.form-input {
+  display: block;
+  width: 100%;
+  line-height: 1.4;
+  padding: 1.1rem 1rem 1.1rem;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 1);
+  border-radius: 4px;
+  margin: 1rem 0;
 }
 
-::placeholder{
-    color: rgba(255, 255, 255, 1);
-    font-size: 1rem;
-    vertical-align: middle;
+::placeholder {
+  color: rgba(255, 255, 255, 1);
+  font-size: 1rem;
+  /* vertical-align: middle; */
 }
 
-.btn{
- /* display: block; */
- width: 100%;
- height: 2.5rem;
- margin: 1rem 0;
- border-radius: 4px;
- border: none;
- font-size: 1rem;
- color:rgba(255, 255, 255, 1) ;
+.btn {
+  /* display: block; */
+  width: 100%;
+  height: 2.5rem;
+  margin: 1rem 0;
+  border-radius: 4px;
+  border: none;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 1);
+  cursor: pointer;
 }
 
-.sign-in-btn{
-    background-color: rgb(229, 9, 20);
+.sign-in-btn {
+  background-color: rgb(229, 9, 20);
 }
 
-.sign-in-code-btn{
-    background-color: dimgray;
-    border: dimgray;
+.sign-in-code-btn {
+  background-color: dimgray;
+  border: dimgray;
 }
 
-
-.text{
-    text-align: center;
-    font-size: 1rem;
+.text-center {
+  text-align: center;
+  font-size: 1rem;
 }
 
-.remember-me-btn{
-    vertical-align: baseline;
-    padding-left: 0.5rem;
-    margin: 1.5rem 0;
-
+.forgot-password-btn {
+  text-decoration: underline;
 }
 
-input[type=checkbox]{
-    transform: scale(1.5);
-   margin-right: 0.5rem;
-   color: #ffffff;
-   
+.remember-me-btn {
+  vertical-align: baseline;
+  padding-left: 0.5rem;
+  margin: 1.5rem 0;
 }
 
-.small-text{
-    font-size: 0.8rem;
-    line-height: 1.5;
+input[type="checkbox"] {
+  transform: scale(1.5);
+  margin-right: 0.5rem;
+  color: #ffffff;
 }
 
-.sign-up-link{
-    color: #ffffff;
-text-decoration: none;
+.small-text {
+  font-size: 0.8rem;
+  line-height: 1.5;
 }
 
-.sign-up-link:hover{
-    text-decoration: underline;
+.sign-up-link {
+  color: #ffffff;
+  text-decoration: none;
 }
 
-.new-to-netflix-details-text{
-    margin-bottom: 1.7rem;
+.sign-up-link:hover {
+  text-decoration: underline;
 }
 
-.learn-more-text{
-    font-size: 0.8rem;
-    font-weight: 100;
+.new-to-netflix-details-text {
+  margin-bottom: 1.7rem;
 }
 
-.learn-more-link{
-    color:blue;
-    text-decoration: none;
+.learn-more-text {
+  font-size: 0.8rem;
+  font-weight: 100;
 }
 
-footer{
-    background-color: rgba(0,0,0);
-    width: 100%;
-    height: 62vh;
-    color: #ffffff;
-    overflow: hidden;
-    font-size: 0.9rem;
-    font-weight: 100;
-}
-footer a{
-    color: #ffffff;
+.learn-more-link {
+  color: blue;
+  text-decoration: none;
 }
 
-.footer-container{
-    width: 60%;
-    font-size: 0.85rem;
-    font-weight: 100;
-    color: rgba(255, 255, 255, 5);
-    margin: 12rem 0 0 11rem;
-    /* border: 2px solid wheat; */
-    display: flex;
-    /* justify-content: space-between; */
-    flex-wrap: wrap;
-}
-.help-center-div{
-    padding: 2.5rem 0;
-    margin-left: 4rem;
-}
+/* FOOTER */
 
-.term-use{
-    padding: 4rem 0;
-    margin-left: 8rem;
+footer {
+  background-color: rgba(0, 0, 0);
+  width: 100%;
+  height: 62vh;
+  color: #ffffff;
+  overflow: hidden;
+  font-size: 0.9rem;
+  font-weight: 100;
 }
-.privacy{
-    padding: 4rem 0;
-    margin-left: 11rem;
-}
-#phone-number{
-    text-decoration: none;
-}
-#phone-number:hover{
-    text-decoration: underline;
+footer a {
+  color: #ffffff;
 }
 
-
-
-li{
-    margin-top: 1.6rem;
-    list-style: none;
-    
+.footer-container {
+  width: 60%;
+  font-size: 0.85rem;
+  font-weight: 100;
+  color: rgba(255, 255, 255, 5);
+  margin: 12rem 0 0 11rem;
+  /* border: 2px solid wheat; */
+  display: flex;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
 }
-.lang-selection-btn{
-    padding: 0.5rem 2rem 0.5rem 1rem;
-    font-size: 0.9rem;
-    font-weight: 400;
-    margin-left: 11rem;
-    border-radius: 4px;
-    color: #ffffff;
-    background-color: #0f0f0f;
-    border-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+.help-center-div {
+  padding: 2.5rem 0;
+  margin-left: 4rem;
 }
 
+.term-use {
+  padding: 4rem 0;
+  margin-left: 8rem;
+}
+.privacy {
+  padding: 4rem 0;
+  margin-left: 11rem;
+}
+#phone-number {
+  text-decoration: none;
+}
+#phone-number:hover {
+  text-decoration: underline;
+}
+
+li {
+  margin-top: 1.6rem;
+  list-style: none;
+}
+.lang-selection-btn {
+  padding: 0.5rem 2rem 0.5rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin-left: 11rem;
+  border-radius: 4px;
+  color: #ffffff;
+  background-color: #0f0f0f;
+  border-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+}
+
+/* MEDIA QUERIES */
 
 
+@media screen and (max-width: 480px) {
+  .form-container {
+    padding: 2rem 3rem;
+    width: 350px;
+  }
+.forgot-password-btn {
+    margin-bottom: 1rem;
+}
+ 
+}
 
+@media  screen and (max-width: 350px) {
+.form-container {
+    width: 300px;
+}    
+}
 
+/* NOTES */
 
+/* for btn 
+An inline-block element (the default for some form inputs) does not participate in vertical margin collapsing. That's why you were seeing the full 1 rem margin from the bottom of the previous element and 1 rem margin from the top of the button, which visually adds up to about 2 rem of space. */
 
-
+/* when you uncomment the display: block, the button now participates in block level element In this case, the top margin of the button and the bottom margin of the input that directly precedes it collapse. */
