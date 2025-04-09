@@ -58,7 +58,6 @@ html {
 
 .form-container {
   width: 450px;
-  /* min-width: 400px; */
   height: 87.8vh;
   background-color: rgba(0, 0, 0, 0.8);
   padding: 3rem 4rem;
@@ -166,56 +165,40 @@ input[type="checkbox"] {
 footer {
   background-color: rgba(0, 0, 0);
   width: 100%;
-  height: 62vh;
   color: #ffffff;
   overflow: hidden;
-  font-size: 0.9rem;
-  font-weight: 100;
 }
+
 footer a {
   color: #ffffff;
 }
 
-.footer-container {
-  width: 60%;
-  font-size: 0.85rem;
-  font-weight: 100;
-  color: rgba(255, 255, 255, 5);
-  margin: 12rem 0 0 11rem;
-  /* border: 2px solid wheat; */
-  display: flex;
-  /* justify-content: space-between; */
-  flex-wrap: wrap;
-}
-.help-center-div {
-  padding: 2.5rem 0;
-  margin-left: 4rem;
+.toll-free-contact {
+  margin: 5rem 0 1rem 9rem;
 }
 
-.term-use {
-  padding: 4rem 0;
-  margin-left: 8rem;
-}
-.privacy {
-  padding: 4rem 0;
-  margin-left: 11rem;
-}
-#phone-number {
+.toll-free-number {
   text-decoration: none;
 }
-#phone-number:hover {
+.toll-free-number:hover {
   text-decoration: underline;
 }
 
-li {
-  margin-top: 1.6rem;
-  list-style: none;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0 9rem;
+  font-size: 0.88rem;
 }
+
+.grid p {
+  line-height: 3;
+}
+
 .lang-selection-btn {
   padding: 0.5rem 2rem 0.5rem 1rem;
   font-size: 0.9rem;
-  font-weight: 400;
-  margin-left: 11rem;
+  margin: 1.5rem 0 3rem 9rem;
   border-radius: 4px;
   color: #ffffff;
   background-color: #0f0f0f;
@@ -224,22 +207,48 @@ li {
 
 /* MEDIA QUERIES */
 
+@media screen and (max-width: 1080px) {
+  .toll-free-contact,
+  .grid,
+  .lang-selection-btn {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .lang-selection-btn {
+    margin-top: 1rem;
+  }
+}
 
 @media screen and (max-width: 480px) {
   .form-container {
     padding: 2rem 3rem;
     width: 350px;
   }
-.forgot-password-btn {
+  .forgot-password-btn {
     margin-bottom: 1rem;
-}
- 
+  }
+
+  .toll-free-contact {
+    font-size: 0.88rem;
+  }
 }
 
-@media  screen and (max-width: 350px) {
-.form-container {
+@media screen and (max-width: 400px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .form-container {
     width: 300px;
-}    
+  }
 }
 
 /* NOTES */
